@@ -1,8 +1,28 @@
 .forum-section {
-  background-color: $color-primary;
+  // background-color: $color-primary;
   // padding: ;
-  height: 119rem;
+  height: 130rem;
   position: relative;
+  background-image: radial-gradient(#61d3b0, #0eb885);
+
+  // &::after {
+  //   height: 80%;
+  //   width: 80%;
+  //   border-radius: 50%;
+  //   content: "";
+  //   display: block;
+  //   background-color: #0cbb87;
+  // }
+
+  .forum__container {
+    position: relative;
+    z-index: 1;
+
+    .btn {
+      background-color: $color-white;
+      color: $color-primary;
+    }
+  }
 
   .forum-img {
     position: absolute;

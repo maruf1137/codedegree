@@ -1,11 +1,28 @@
 .platform-section {
   padding: 8rem 0;
+  position: relative;
+
+  .platform-side-img {
+    position: absolute;
+  }
+  .platform-side-img-1 {
+    height: 33rem;
+    width: 33rem;
+    top: -5rem;
+    left: -5rem;
+  }
+  .platform-side-img-2 {
+    height: 46rem;
+    width: 46rem;
+    bottom: -10rem;
+    right: -10rem;
+  }
 }
 
 .platform {
   &__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
   }
   &__item {

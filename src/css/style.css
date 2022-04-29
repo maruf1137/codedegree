@@ -92,11 +92,11 @@ h4.heading {
 }
 
 .white {
-  color: #fff;
+  color: #fff !important;
 }
 
 .black {
-  color: #000;
+  color: #000 !important;
 }
 
 html,
@@ -1039,6 +1039,10 @@ button {
   font-size: 1.6rem;
   font-weight: 700;
   color: #262638;
+  text-decoration: none;
+}
+.nav__link:hover {
+  color: #262638;
 }
 .header .image-area {
   height: 68rem;
@@ -1073,13 +1077,12 @@ button {
   gap: 3rem;
 }
 .frame__item {
-  display: flex;
-  align-items: start;
   gap: 1.6rem;
+  text-align: left;
 }
 .frame__img {
   height: auto;
-  width: 7.6rem;
+  width: 10.6rem;
 }
 .frame__img img {
   height: 100%;
@@ -1092,11 +1095,25 @@ button {
 
 .platform-section {
   padding: 8rem 0;
+  position: relative;
+}
+.platform-section .platform-side-img {
+  position: absolute;
+}
+.platform-section .platform-side-img-1 {
+  height: 33rem;
+  width: 33rem;
+  top: -5rem;
+  left: -5rem;
+}
+.platform-section .platform-side-img-2 {
+  height: 46rem;
+  width: 46rem;
+  bottom: -10rem;
+  right: -10rem;
 }
 
 .platform__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 4rem;
 }
 .platform__img {
@@ -1111,9 +1128,17 @@ button {
 }
 
 .forum-section {
-  background-color: #61d3b0;
-  height: 119rem;
+  height: 130rem;
   position: relative;
+  background-image: radial-gradient(#61d3b0, #0eb885);
+}
+.forum-section .forum__container {
+  position: relative;
+  z-index: 1;
+}
+.forum-section .forum__container .btn {
+  background-color: #fff;
+  color: #61d3b0;
 }
 .forum-section .forum-img {
   position: absolute;
@@ -1125,6 +1150,87 @@ button {
 .forum-section .forum-img img {
   height: 100%;
   width: 100%;
+}
+
+.projects-section {
+  padding: 8rem 0;
+}
+
+.join-section {
+  padding: 8rem 0;
+}
+
+.join {
+  padding: 0 8rem;
+}
+.join__list {
+  gap: 12rem;
+  margin-bottom: 12rem;
+}
+.join__item {
+  background-color: #61d3b0;
+  text-align: center;
+  padding: 8rem 8rem;
+  border-radius: 40rem;
+}
+.join__item h3 {
+  font-size: 3.2rem;
+}
+.join__item .text {
+  font-size: 2.4rem;
+}
+.join .btn {
+  margin: 0 auto;
+}
+
+.article-section {
+  padding: 8rem 0;
+  background-color: #61d3b0;
+}
+.article-section .btn {
+  background-color: #252537;
+  color: #fff;
+}
+
+.article__item {
+  border-radius: 1rem;
+}
+.article__img {
+  height: 29.5rem;
+  width: 100%;
+  border-radius: 2rem;
+  background-color: #61d3b0;
+  position: relative;
+  z-index: 1;
+}
+.article__img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+.article .details {
+  padding: 4rem;
+  background-color: #fff;
+  border-radius: 0 0 1rem 1rem;
+  margin-top: -1.5rem;
+  position: relative;
+  z-index: 0;
+}
+.article .details h5 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #252537;
+}
+.article .details .text {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #101010;
+}
+.article .read {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #252537;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

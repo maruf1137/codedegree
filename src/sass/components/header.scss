@@ -35,14 +35,15 @@
     gap: 3rem;
   }
   &__item {
-    display: flex;
-    align-items: start;
+    // display: flex;
+    // align-items: start;
     gap: 1.6rem;
+    text-align: left;
   }
 
   &__img {
     height: auto;
-    width: 7.6rem;
+    width: 10.6rem;
     img {
       @include img-size;
     }

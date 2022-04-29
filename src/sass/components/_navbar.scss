@@ -21,6 +21,11 @@
     font-size: 1.6rem;
     font-weight: 700;
     color: #262638;
+    text-decoration: none;
+
+    &:hover {
+      color: #262638;
+    }
   }
 
   &__btn {

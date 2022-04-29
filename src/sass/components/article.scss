@@ -1,0 +1,64 @@
+.article-section {
+  padding: 8rem 0;
+  background-color: $color-primary;
+
+  .btn {
+    background-color: $color-secondary;
+    color: $color-white;
+  }
+}
+
+.article {
+  // .row {
+  //   display: grid;
+  //   grid-template-columns: repeat(3, 1fr);
+  //   gap: 3rem;
+  // }
+  &__item {
+    //  background-color: $color-white;
+    //  border: 1px solid red;
+    border-radius: 1rem;
+  }
+
+  &__img {
+    height: 29.5rem;
+    width: 100%;
+    border-radius: 2rem;
+    background-color: $color-primary;
+    position: relative;
+    z-index: 1;
+
+    img {
+      @include img-size;
+      border-radius: 1rem;
+    }
+  }
+
+  .details {
+    padding: 4rem;
+    background-color: $color-white;
+    border-radius: 0 0 1rem 1rem;
+    margin-top: -1.5rem;
+    position: relative;
+    z-index: 0;
+
+    h5 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: $color-secondary;
+    }
+
+    .text {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #101010;
+    }
+  }
+
+  .read {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $color-secondary;
+    text-decoration: none;
+  }
+}
