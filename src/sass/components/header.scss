@@ -1,0 +1,57 @@
+.header {
+  .image-area {
+    height: 68rem;
+    width: 100%;
+    background-image: url("../img/header-img-2.png");
+    background-position: top center;
+    background-size: cover;
+    position: relative;
+  }
+
+  &__image {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .border-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 24rem;
+  }
+}
+
+.frame {
+  background-color: $color-primary;
+  padding: 8rem 0;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  &__item {
+    display: flex;
+    align-items: start;
+    gap: 1.6rem;
+  }
+
+  &__img {
+    height: auto;
+    width: 7.6rem;
+    img {
+      @include img-size;
+    }
+  }
+
+  &__details {
+    .text {
+      color: $color-white;
+      font-size: 1.8rem;
+    }
+  }
+}

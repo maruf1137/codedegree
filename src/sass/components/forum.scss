@@ -1,0 +1,18 @@
+.forum-section {
+  background-color: $color-primary;
+  // padding: ;
+  height: 119rem;
+  position: relative;
+
+  .forum-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+
+    img {
+      @include img-size;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.platform-section {
+  padding: 8rem 0;
+}
+
+.platform {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+  &__item {
+  }
+
+  &__img {
+    height: 21rem;
+    width: 17rem;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 10rem;
+  }
+}
