@@ -4,6 +4,9 @@
 
 .join {
   padding: 0 8rem;
+  @media only screen and (max-width: $tab-land) {
+    padding: 0;
+  }
   &__list {
     gap: 5rem 12rem;
     margin-bottom: 12rem;
@@ -50,6 +53,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+  @media only screen and (max-width: $tab-port) {
+    &__img-1 {
+      height: 52rem;
     }
   }
 }

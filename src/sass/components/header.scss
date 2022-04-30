@@ -1,12 +1,20 @@
 .header {
   margin-top: 15rem !important;
+
   .image-area {
     height: 68rem;
     width: 100%;
-    // background-image: url("../img/header-img-2.png");
-    // background-position: top center;
-    // background-size: cover;
     position: relative;
+
+    @media only screen and (max-width: $tab-land) {
+      height: 45rem;
+    }
+
+    img {
+      @include img-size;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 
   .text {
@@ -38,6 +46,7 @@
 
   &__list {
     gap: 5rem 0;
+    padding-right: 1rem;
   }
   &__item {
     gap: 1.6rem;
@@ -63,6 +72,10 @@
   }
 
   &__details {
+    @media only screen and (max-width: $mbl-land) {
+      padding: 0 4rem;
+    }
+
     .text {
       color: $color-white;
       font-size: 1.8rem;
