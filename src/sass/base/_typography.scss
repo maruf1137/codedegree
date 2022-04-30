@@ -3,12 +3,29 @@ h1.heading {
   font-family: $font-primary;
   font-weight: 900;
   color: #262638;
+
+  @media only screen and (max-width: $tab-land) {
+    font-size: 4.5rem;
+  }
+  @media only screen and (max-width: $mbl-port) {
+    font-size: 3.5rem;
+  }
 }
 h2.heading {
   font-size: 6.2rem;
   font-family: $font-primary;
   font-weight: 800;
   color: $color-secondary;
+
+  @media only screen and (max-width: $tab-land) {
+    font-size: 4.8rem;
+  }
+  @media only screen and (max-width: $mbl-port) {
+    font-size: 3.5rem;
+  }
+  @media only screen and (max-width: $mbl-small) {
+    font-size: 3rem;
+  }
 }
 h3.heading {
   font-size: 3rem;

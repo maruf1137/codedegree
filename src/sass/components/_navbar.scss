@@ -15,6 +15,10 @@
     display: flex;
     align-items: center;
     gap: 5rem;
+
+    @media only screen and (max-width: $tab-land) {
+      display: none;
+    }
   }
 
   &__link {
@@ -29,5 +33,28 @@
   }
 
   &__btn {
+    @media only screen and (max-width: $tab-land) {
+      display: none;
+    }
+  }
+}
+
+.mbl-bars {
+  display: none;
+  position: fixed;
+  top: 3.5rem;
+  right: 3rem;
+  cursor: pointer;
+
+  @media only screen and (max-width: $tab-land) {
+    display: block;
+  }
+  .bars {
+    height: 3.5rem;
+    width: 4.5rem;
+
+    img {
+      @include img-size;
+    }
   }
 }

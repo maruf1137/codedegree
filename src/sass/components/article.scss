@@ -1,5 +1,5 @@
 .article-section {
-  padding: 8rem 0;
+  padding: 8rem 0 0 0;
   background-color: $color-primary;
 
   .btn {
@@ -9,14 +9,7 @@
 }
 
 .article {
-  // .row {
-  //   display: grid;
-  //   grid-template-columns: repeat(3, 1fr);
-  //   gap: 3rem;
-  // }
   &__item {
-    //  background-color: $color-white;
-    //  border: 1px solid red;
     border-radius: 1rem;
   }
 
@@ -61,4 +54,9 @@
     color: $color-secondary;
     text-decoration: none;
   }
+}
+
+.contact-section {
+  background-image: radial-gradient(#61d3b0, #0eb885);
+  padding: 8rem 0;
 }

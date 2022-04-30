@@ -7,16 +7,28 @@
   &__list {
     // display: grid;
     // grid-template-columns: repeat(2, 1fr);
-    gap: 12rem;
+    gap: 5rem 12rem;
     margin-bottom: 12rem;
+
+    @media only screen and (max-width: $tab-land) {
+      gap: 5rem 3rem;
+    }
   }
   &__item {
     background-color: $color-primary;
-    //  padding: 5rem 0;
-    //  width: 41rem;
     text-align: center;
-    padding: 8rem 8rem;
+    padding: 8rem 4rem;
     border-radius: 40rem;
+
+    @media only screen and (max-width: $tab-land) {
+      padding: 8rem 3rem;
+    }
+    @media only screen and (max-width: $tab-port) {
+      background-color: transparent;
+      text-align: center;
+      padding: 0 4rem;
+      border-radius: 0;
+    }
 
     h3 {
       font-size: 3.2rem;
@@ -27,7 +39,14 @@
     }
   }
 
-  .btn {
-    margin: 0 auto;
+  @media only screen and (max-width: $tab-port) {
+    &__img-1 {
+      background: $color-primary;
+      height: 80rem;
+      border-radius: 30rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }

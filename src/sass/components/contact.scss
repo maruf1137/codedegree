@@ -1,0 +1,83 @@
+.contact {
+  &__circle {
+    margin-top: -23rem;
+  }
+  &__item {
+    // padding: 6rem;
+    background-color: $color-primary;
+    border: 1rem solid #fff;
+    border-radius: 50%;
+    height: 30rem;
+    width: 30rem;
+    background-image: radial-gradient(#61d3b0, #0eb885);
+
+    .number {
+      font-size: 7rem;
+      font-weight: 500;
+      font-family: $font-secondary;
+      color: $color-white;
+    }
+
+    h5 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: $color-white;
+    }
+
+    .text {
+      font-size: 1.6rem;
+      color: $color-white;
+      font-weight: 700;
+    }
+  }
+
+  &__content {
+  }
+
+  h2 {
+    font-size: 9.6rem;
+    font-weight: 900;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+
+  &__buttons {
+    gap: 2rem;
+  }
+
+  &__right {
+    max-width: 54rem;
+
+    .text {
+      color: $color-white;
+    }
+
+    .btn {
+      font-size: 2.4rem;
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+
+    .btn-join {
+      background-color: $color-white;
+      color: $color-black;
+      border: 1px solid $color-white;
+      color: $color-primary;
+
+      &:hover {
+        background-color: transparent;
+        color: $color-white;
+      }
+    }
+    .btn-contact {
+      background-color: transparent;
+      color: $color-white;
+      border: 1px solid $color-white;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.footer-section {
+  padding: 8rem 0 0 0;
+  background-color: $color-secondary;
+}
+
+.footer {
+  color: $color-white;
+  padding-bottom: 3.5rem;
+
+  &__col-1 {
+    margin-right: 8rem;
+    h6 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $color-white;
+    }
+    .text {
+      color: $color-white;
+    }
+  }
+
+  &__list {
+    a:link,
+    a:visited,
+    .heading {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: $color-white;
+      text-decoration: none;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-bottom: 1.4rem;
+      }
+    }
+  }
+}
+
+.copyright {
+  padding: 3rem 0;
+  border-top: 1px solid $color-white;
+
+  .text {
+    color: $color-white;
+  }
+
+  .social {
+    gap: 3rem;
+  }
+}

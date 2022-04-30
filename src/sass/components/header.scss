@@ -2,9 +2,9 @@
   .image-area {
     height: 68rem;
     width: 100%;
-    background-image: url("../img/header-img-2.png");
-    background-position: top center;
-    background-size: cover;
+    // background-image: url("../img/header-img-2.png");
+    // background-position: top center;
+    // background-size: cover;
     position: relative;
   }
 
@@ -30,20 +30,30 @@
   padding: 8rem 0;
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    gap: 5rem 0;
   }
   &__item {
     // display: flex;
     // align-items: start;
     gap: 1.6rem;
     text-align: left;
+
+    @media only screen and (max-width: $mbl-land) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__img {
     height: auto;
     width: 10.6rem;
+
+    @media only screen and (max-width: $mbl-land) {
+      margin: 0 auto;
+    }
+
     img {
       @include img-size;
     }
