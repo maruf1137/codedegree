@@ -13,6 +13,7 @@ button {
   border-radius: 10rem;
   font-family: $font-secondary;
   transition: all 0.3s;
+  text-transform: capitalize;
 
   &:hover {
     background-color: transparent;

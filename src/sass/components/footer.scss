@@ -6,6 +6,7 @@
 .footer {
   color: $color-white;
   padding-bottom: 3.5rem;
+  gap: 8rem 0;
 
   &__col-1 {
     margin-right: 8rem;
@@ -13,9 +14,14 @@
       font-size: 2rem;
       font-weight: 700;
       color: $color-white;
+      font-family: $font-secondary;
     }
     .text {
       color: $color-white;
+      font-size: 1.8rem;
+      opacity: 0.8;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
     }
   }
 
@@ -27,6 +33,13 @@
       font-weight: 500;
       color: $color-white;
       text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+
+    .heading {
+      opacity: 1;
     }
 
     li {
@@ -41,8 +54,18 @@
   padding: 3rem 0;
   border-top: 1px solid $color-white;
 
+  @media only screen and (max-width: $mbl-land) {
+    flex-direction: column;
+    gap: 3rem 0;
+    text-align: center;
+  }
+
   .text {
+    font-size: 1.6rem;
     color: $color-white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    opacity: 0.8;
   }
 
   .social {

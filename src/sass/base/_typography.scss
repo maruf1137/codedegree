@@ -14,8 +14,9 @@ h1.heading {
 h2.heading {
   font-size: 6.2rem;
   font-family: $font-primary;
-  font-weight: 800;
+  font-weight: 500;
   color: $color-secondary;
+  line-height: 7rem;
 
   @media only screen and (max-width: $tab-land) {
     font-size: 4.8rem;
@@ -39,11 +40,17 @@ h4.heading {
   font-family: $font-primary;
   font-weight: 800;
   color: $color-white;
+  line-height: 4.2rem;
 }
 
 .text {
-  font-size: 1.6rem;
-  color: $color-secondary;
+  font-size: 2rem;
+  color: $color-primary;
+  font-weight: 400;
+  font-family: $font-primary;
+  text-transform: capitalize;
+  color: $color-black;
+  line-height: 3.4rem;
 }
 
 // Typography utils

@@ -8,10 +8,25 @@
   z-index: 5;
   padding: 3.5rem;
   transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
   transition: all 0.5s;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: none;
 
-  &__logo {
+  @media only screen and (max-width: $tab-land) {
+    display: block;
+  }
+  @media only screen and (max-width: $mbl-port) {
+    width: 100%;
+  }
+
+  .close-sidebar {
+    position: absolute;
+    top: 3.5rem;
+    right: 4rem;
+    height: 4.5rem;
+    width: 4.5rem;
   }
 
   &__list {
@@ -40,4 +55,6 @@
 
 .show-sidebar {
   transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
 }

@@ -6,9 +6,28 @@
     background-color: $color-secondary;
     color: $color-white;
   }
+
+  .owl-theme .owl-dots .owl-dot span {
+    width: 4rem;
+    background-color: #fff;
+    opacity: 0.5;
+    display: none;
+    margin-top: 5rem;
+
+    @media only screen and (max-width: $mbl-land) {
+      display: block;
+    }
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span {
+    opacity: 1;
+  }
 }
 
 .article {
+  .row {
+    // gap: 5rem 0;
+  }
   &__item {
     border-radius: 1rem;
   }
@@ -45,6 +64,8 @@
       font-size: 1.8rem;
       font-weight: 400;
       color: #101010;
+      line-height: 2.5rem;
+      opacity: 0.6;
     }
   }
 
@@ -53,6 +74,13 @@
     font-weight: 600;
     color: $color-secondary;
     text-decoration: none;
+  }
+
+  &__img-big {
+    img {
+      object-fit: cover;
+      object-position: center right;
+    }
   }
 }
 

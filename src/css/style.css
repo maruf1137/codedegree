@@ -73,8 +73,9 @@ h1.heading {
 h2.heading {
   font-size: 6.2rem;
   font-family: "Nunito Sans", sans-serif;
-  font-weight: 800;
+  font-weight: 500;
   color: #252537;
+  line-height: 7rem;
 }
 @media only screen and (max-width: 62em) {
   h2.heading {
@@ -104,11 +105,17 @@ h4.heading {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 800;
   color: #fff;
+  line-height: 4.2rem;
 }
 
 .text {
-  font-size: 1.6rem;
-  color: #252537;
+  font-size: 2rem;
+  color: #0cbb87;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: capitalize;
+  color: #000;
+  line-height: 3.4rem;
 }
 
 .bold {
@@ -1043,24 +1050,34 @@ button {
 
 .btn {
   padding: 1.3rem 3rem;
-  border: 2px solid #61d3b0;
-  background: #61d3b0;
+  border: 2px solid #0cbb87;
+  background: #0cbb87;
   color: #fff;
   font-size: 1.8rem;
   border-radius: 10rem;
   font-family: "Poppins", sans-serif;
   transition: all 0.3s;
+  text-transform: capitalize;
 }
 .btn:hover {
   background-color: transparent;
-  color: #61d3b0;
+  color: #0cbb87;
 }
 
+.nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 3;
+}
 .nav__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  padding: 0.6rem 0;
 }
 .nav__logo {
   width: 18.3rem;
@@ -1094,9 +1111,10 @@ button {
 .mbl-bars {
   display: none;
   position: fixed;
-  top: 3.5rem;
+  top: 2.5rem;
   right: 3rem;
   cursor: pointer;
+  z-index: 4;
 }
 @media only screen and (max-width: 62em) {
   .mbl-bars {
@@ -1118,12 +1136,32 @@ button {
   left: 0;
   height: 100vh;
   width: 60%;
-  background-color: #61d3b0;
+  background-color: #0cbb87;
   z-index: 5;
   padding: 3.5rem;
   transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
   transition: all 0.5s;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: none;
+}
+@media only screen and (max-width: 62em) {
+  .sidebar {
+    display: block;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.sidebar .close-sidebar {
+  position: absolute;
+  top: 3.5rem;
+  right: 4rem;
+  height: 4.5rem;
+  width: 4.5rem;
 }
 .sidebar__list {
   display: flex;
@@ -1139,7 +1177,7 @@ button {
 .sidebar__btn {
   background-color: #fff;
   border: 1px solid #fff;
-  color: #61d3b0;
+  color: #0cbb87;
 }
 .sidebar__btn:hover {
   background-color: transparent;
@@ -1148,12 +1186,22 @@ button {
 
 .show-sidebar {
   transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
 }
 
+.header {
+  margin-top: 15rem !important;
+}
 .header .image-area {
   height: 68rem;
   width: 100%;
   position: relative;
+}
+.header .text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 .header__image {
   width: 100%;
@@ -1171,7 +1219,7 @@ button {
 }
 
 .frame {
-  background-color: #61d3b0;
+  background-color: #0cbb87;
   padding: 8rem 0;
 }
 .frame__list {
@@ -1203,11 +1251,35 @@ button {
 .frame__details .text {
   color: #fff;
   font-size: 1.8rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
 }
 
 .platform-section {
   padding: 8rem 0;
   position: relative;
+}
+.platform-section .owl-theme .owl-dots .owl-dot span {
+  width: 4rem;
+  background-color: #14ba88;
+  opacity: 0.5;
+  display: none;
+}
+@media only screen and (max-width: 35.9375em) {
+  .platform-section .owl-theme .owl-dots .owl-dot span {
+    display: block;
+  }
+}
+.platform-section .owl-theme .owl-dots .owl-dot.active span {
+  opacity: 1;
+}
+.platform-section .text {
+  font-size: 2rem;
+  color: #000;
+}
+.platform-section h3 {
+  font-size: 3rem;
+  font-weight: 700;
 }
 .platform-section .platform-side-img {
   position: absolute;
@@ -1239,7 +1311,7 @@ button {
 .platform__img {
   height: 21rem;
   width: 17rem;
-  background-color: #61d3b0;
+  background-color: #0cbb87;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1257,7 +1329,7 @@ button {
 }
 .forum-section .forum__container .btn {
   background-color: #fff;
-  color: #61d3b0;
+  color: #0cbb87;
 }
 .forum-section .forum-img {
   position: relative;
@@ -1275,6 +1347,24 @@ button {
 }
 .projects-section h2 {
   margin-bottom: 3rem !important;
+}
+.projects-section .owl-theme .owl-dots .owl-dot span {
+  width: 4rem;
+  background-color: #14ba88;
+  opacity: 0.5;
+  display: none;
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 48em) {
+  .projects-section .owl-theme .owl-dots .owl-dot span {
+    display: block;
+  }
+}
+.projects-section .owl-theme .owl-dots .owl-dot.active span {
+  opacity: 1;
+}
+.projects-section .owl-carousel .owl-stage-outer {
+  overflow: visible;
 }
 
 .project {
@@ -1302,7 +1392,7 @@ button {
 }
 .project__item {
   height: 55rem;
-  background-color: #61d3b0;
+  background-color: #0cbb87;
   position: relative;
   padding: 5.4rem 4rem;
 }
@@ -1336,13 +1426,8 @@ button {
   right: 5rem;
 }
 
-.owl-theme .owl-nav,
-.owl-theme .owl-dots {
+.owl-theme .owl-nav {
   display: none;
-}
-
-.owl-carousel .owl-stage-outer {
-  overflow: visible;
 }
 
 .join-section {
@@ -1362,7 +1447,7 @@ button {
   }
 }
 .join__item {
-  background-color: #61d3b0;
+  background-color: #0cbb87;
   text-align: center;
   padding: 8rem 4rem;
   border-radius: 40rem;
@@ -1382,13 +1467,17 @@ button {
 }
 .join__item h3 {
   font-size: 3.2rem;
+  font-weight: 500;
 }
 .join__item .text {
   font-size: 2.4rem;
 }
+.join .btn {
+  font-size: 2.1rem;
+}
 @media only screen and (max-width: 48em) {
   .join__img-1 {
-    background: #61d3b0;
+    background: #0cbb87;
     height: 80rem;
     border-radius: 30rem;
     display: flex;
@@ -1399,11 +1488,26 @@ button {
 
 .article-section {
   padding: 8rem 0 0 0;
-  background-color: #61d3b0;
+  background-color: #0cbb87;
 }
 .article-section .btn {
   background-color: #252537;
   color: #fff;
+}
+.article-section .owl-theme .owl-dots .owl-dot span {
+  width: 4rem;
+  background-color: #fff;
+  opacity: 0.5;
+  display: none;
+  margin-top: 5rem;
+}
+@media only screen and (max-width: 35.9375em) {
+  .article-section .owl-theme .owl-dots .owl-dot span {
+    display: block;
+  }
+}
+.article-section .owl-theme .owl-dots .owl-dot.active span {
+  opacity: 1;
 }
 
 .article__item {
@@ -1413,7 +1517,7 @@ button {
   height: 29.5rem;
   width: 100%;
   border-radius: 2rem;
-  background-color: #61d3b0;
+  background-color: #0cbb87;
   position: relative;
   z-index: 1;
 }
@@ -1439,12 +1543,18 @@ button {
   font-size: 1.8rem;
   font-weight: 400;
   color: #101010;
+  line-height: 2.5rem;
+  opacity: 0.6;
 }
 .article .read {
   font-size: 1.8rem;
   font-weight: 600;
   color: #252537;
   text-decoration: none;
+}
+.article__img-big img {
+  object-fit: cover;
+  object-position: center right;
 }
 
 .contact-section {
@@ -1454,9 +1564,17 @@ button {
 
 .contact__circle {
   margin-top: -23rem;
+  gap: 5rem 2rem;
+}
+@media only screen and (max-width: 62em) {
+  .contact__circle {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .contact__item {
-  background-color: #61d3b0;
+  background-color: #0cbb87;
   border: 1rem solid #fff;
   border-radius: 50%;
   height: 30rem;
@@ -1469,6 +1587,16 @@ button {
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
+@media only screen and (max-width: 64em) {
+  .contact__item .number {
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .contact__item .number {
+    font-size: 4.5rem;
+  }
+}
 .contact__item h5 {
   font-size: 2.4rem;
   font-weight: 600;
@@ -1479,17 +1607,37 @@ button {
   color: #fff;
   font-weight: 700;
 }
+@media only screen and (max-width: 75em) {
+  .contact__content {
+    flex-direction: column;
+    gap: 3rem 0;
+  }
+}
 .contact h2 {
   font-size: 9.6rem;
-  font-weight: 900;
+  font-weight: 500;
   color: #fff;
+  line-height: 8.2rem;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 75em) {
+  .contact h2 {
+    font-size: 7.6rem;
+    text-align: center;
+  }
 }
 .contact__buttons {
   gap: 2rem;
+  justify-content: center;
 }
 .contact__right {
-  max-width: 54rem;
+  width: 54rem;
+}
+@media only screen and (max-width: 75em) {
+  .contact__right {
+    width: 100%;
+    text-align: center;
+  }
 }
 .contact__right .text {
   color: #fff;
@@ -1498,12 +1646,13 @@ button {
   font-size: 2.4rem;
   font-weight: 700;
   text-transform: capitalize;
+  font-family: "Nunito Sans", sans-serif;
 }
 .contact__right .btn-join {
   background-color: #fff;
   color: #000;
   border: 1px solid #fff;
-  color: #61d3b0;
+  color: #0cbb87;
 }
 .contact__right .btn-join:hover {
   background-color: transparent;
@@ -1516,7 +1665,7 @@ button {
 }
 .contact__right .btn-contact:hover {
   background-color: #fff;
-  color: #61d3b0;
+  color: #0cbb87;
 }
 
 .footer-section {
@@ -1527,6 +1676,7 @@ button {
 .footer {
   color: #fff;
   padding-bottom: 3.5rem;
+  gap: 8rem 0;
 }
 .footer__col-1 {
   margin-right: 8rem;
@@ -1535,9 +1685,14 @@ button {
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 .footer__col-1 .text {
   color: #fff;
+  font-size: 1.8rem;
+  opacity: 0.8;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
 }
 .footer__list a:link,
 .footer__list a:visited,
@@ -1546,6 +1701,12 @@ button {
   font-weight: 500;
   color: #fff;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  opacity: 0.8;
+}
+.footer__list .heading {
+  opacity: 1;
 }
 .footer__list li:not(:last-child) {
   margin-bottom: 1.4rem;
@@ -1555,8 +1716,19 @@ button {
   padding: 3rem 0;
   border-top: 1px solid #fff;
 }
+@media only screen and (max-width: 35.9375em) {
+  .copyright {
+    flex-direction: column;
+    gap: 3rem 0;
+    text-align: center;
+  }
+}
 .copyright .text {
+  font-size: 1.6rem;
   color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  opacity: 0.8;
 }
 .copyright .social {
   gap: 3rem;

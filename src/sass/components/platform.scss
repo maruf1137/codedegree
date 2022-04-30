@@ -2,6 +2,31 @@
   padding: 8rem 0;
   position: relative;
 
+  .owl-theme .owl-dots .owl-dot span {
+    width: 4rem;
+    background-color: #14ba88;
+    opacity: 0.5;
+    display: none;
+
+    @media only screen and (max-width: $mbl-land) {
+      display: block;
+    }
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span {
+    opacity: 1;
+  }
+
+  .text {
+    font-size: 2rem;
+    color: $color-black;
+  }
+
+  h3 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
   .platform-side-img {
     position: absolute;
 

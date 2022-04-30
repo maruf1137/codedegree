@@ -1,9 +1,17 @@
 .nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 3;
+
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 0.6rem 0;
   }
 
   &__logo {
@@ -42,9 +50,10 @@
 .mbl-bars {
   display: none;
   position: fixed;
-  top: 3.5rem;
+  top: 2.5rem;
   right: 3rem;
   cursor: pointer;
+  z-index: 4;
 
   @media only screen and (max-width: $tab-land) {
     display: block;
