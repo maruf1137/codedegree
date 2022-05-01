@@ -12,6 +12,9 @@
     @media only screen and (max-width: $mbl-land) {
       height: 45rem;
     }
+    @media only screen and (max-width: $mbl-port) {
+      height: 33rem;
+    }
 
     img {
       @include img-size;

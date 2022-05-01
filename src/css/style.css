@@ -1203,6 +1203,11 @@ button {
     height: 45rem;
   }
 }
+@media only screen and (max-width: 30em) {
+  .header .image-area {
+    height: 33rem;
+  }
+}
 .header .image-area img {
   height: 100%;
   width: 100%;
