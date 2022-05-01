@@ -25,9 +25,6 @@
 }
 
 .article {
-  .row {
-    // gap: 5rem 0;
-  }
   &__item {
     border-radius: 1rem;
   }
@@ -92,9 +89,12 @@
       object-position: top center;
       @include img-size;
 
-      @media only screen and (max-width: $mbl-port) {
+      @media only screen and (max-width: $tab-land) {
         object-position: top right;
       }
+      // @media only screen and (max-width: $mbl-port) {
+      //   object-position: top right;
+      // }
     }
   }
 }
