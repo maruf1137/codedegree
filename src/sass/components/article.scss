@@ -79,10 +79,13 @@
     width: 100%;
 
     @media only screen and (max-width: $tab-land) {
-      height: 70rem;
+      height: 52rem;
     }
-    @media only screen and (max-width: $mbl-land) {
-      height: 45rem;
+    @media only screen and (max-width: $mbl-port) {
+      height: 32rem;
+    }
+    @media only screen and (max-width: $mbl-small) {
+      height: 25rem;
     }
     img {
       object-fit: cover;
@@ -90,7 +93,7 @@
       @include img-size;
 
       @media only screen and (max-width: $tab-land) {
-        object-position: top right;
+        object-position: top center;
       }
       // @media only screen and (max-width: $mbl-port) {
       //   object-position: top right;

@@ -19,16 +19,19 @@
     z-index: 0;
 
     @media only screen and (max-width: $tab-land) {
-      height: 70rem;
+      height: 52rem;
     }
-    @media only screen and (max-width: $mbl-land) {
-      height: 45rem;
+    @media only screen and (max-width: $mbl-port) {
+      height: 32rem;
+    }
+    @media only screen and (max-width: $mbl-small) {
+      height: 25rem;
     }
 
     img {
       @include img-size;
       object-fit: cover;
-      object-position: top left;
+      object-position: top center;
     }
   }
 }
