@@ -25,11 +25,6 @@ html {
     font-size: 50%;
   }
 }
-@media only screen and (max-width: 23.75em) {
-  html {
-    font-size: 45%;
-  }
-}
 
 body {
   font-family: "Nunito Sans", sans-serif;
@@ -1050,8 +1045,8 @@ button {
 
 .btn {
   padding: 1.3rem 3rem;
-  border: 2px solid #0cbb87;
-  background: #0cbb87;
+  border: 2px solid #61d3b0;
+  background: #61d3b0;
   color: #fff;
   font-size: 1.8rem;
   border-radius: 10rem;
@@ -1194,11 +1189,16 @@ button {
   margin-top: 15rem !important;
 }
 .header .image-area {
-  height: 68rem;
+  height: 100rem;
   width: 100%;
   position: relative;
 }
 @media only screen and (max-width: 62em) {
+  .header .image-area {
+    height: 70rem;
+  }
+}
+@media only screen and (max-width: 35.9375em) {
   .header .image-area {
     height: 45rem;
   }
@@ -1207,7 +1207,7 @@ button {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top center;
 }
 .header .text {
   font-family: "Poppins", sans-serif;
@@ -1350,10 +1350,15 @@ button {
   color: #0cbb87;
 }
 .forum-section .forum-img {
-  height: 68rem;
+  height: 100rem;
   width: 100%;
   position: relative;
   z-index: 0;
+}
+@media only screen and (max-width: 62em) {
+  .forum-section .forum-img {
+    height: 70rem;
+  }
 }
 @media only screen and (max-width: 35.9375em) {
   .forum-section .forum-img {
@@ -1364,7 +1369,7 @@ button {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: left;
+  object-position: top center;
 }
 
 .projects-section {
@@ -1588,8 +1593,13 @@ button {
   text-decoration: none;
 }
 .article__img-big {
-  height: 68rem;
+  height: 100rem;
   width: 100%;
+}
+@media only screen and (max-width: 62em) {
+  .article__img-big {
+    height: 70rem;
+  }
 }
 @media only screen and (max-width: 35.9375em) {
   .article__img-big {
@@ -1598,9 +1608,14 @@ button {
 }
 .article__img-big img {
   object-fit: cover;
-  object-position: center;
+  object-position: top center;
   height: 100%;
   width: 100%;
+}
+@media only screen and (max-width: 30em) {
+  .article__img-big img {
+    object-position: top right;
+  }
 }
 
 .contact-section {
@@ -1706,11 +1721,11 @@ button {
   color: #0cbb87;
 }
 .contact__right .btn-join:hover {
-  background-color: transparent;
+  background-color: #61d3b0;
   color: #fff;
 }
 .contact__right .btn-contact {
-  background-color: transparent;
+  background-color: #61d3b0;
   color: #fff;
   border: 1px solid #fff;
 }

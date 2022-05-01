@@ -2,18 +2,21 @@
   margin-top: 15rem !important;
 
   .image-area {
-    height: 68rem;
+    height: 100rem;
     width: 100%;
     position: relative;
 
     @media only screen and (max-width: $tab-land) {
+      height: 70rem;
+    }
+    @media only screen and (max-width: $mbl-land) {
       height: 45rem;
     }
 
     img {
       @include img-size;
       object-fit: cover;
-      object-position: center;
+      object-position: top center;
     }
   }
 

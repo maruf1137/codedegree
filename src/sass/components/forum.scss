@@ -1,7 +1,4 @@
 .forum-section {
-  // background-color: $color-primary;
-  // padding: ;
-  // height: 112rem;
   position: relative;
   background-image: radial-gradient(#61d3b0, #0eb885);
 
@@ -16,11 +13,14 @@
   }
 
   .forum-img {
-    height: 68rem;
+    height: 100rem;
     width: 100%;
     position: relative;
     z-index: 0;
 
+    @media only screen and (max-width: $tab-land) {
+      height: 70rem;
+    }
     @media only screen and (max-width: $mbl-land) {
       height: 45rem;
     }
@@ -28,7 +28,7 @@
     img {
       @include img-size;
       object-fit: cover;
-      object-position: left;
+      object-position: top center;
     }
   }
 }
