@@ -16,7 +16,7 @@
     }
   }
   &__item {
-    background-color: $color-primary;
+    background-color: #19bc8b;
     text-align: center;
     padding: 8rem 4rem;
     border-radius: 40rem;
@@ -47,7 +47,7 @@
 
   @media only screen and (max-width: $tab-port) {
     &__img-1 {
-      background: $color-primary;
+      background: #19bc8b;
       height: 80rem;
       border-radius: 30rem;
       display: flex;

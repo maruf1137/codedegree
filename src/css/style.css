@@ -1329,7 +1329,7 @@ button {
 .platform__img {
   height: 21rem;
   width: 17rem;
-  background-color: #0cbb87;
+  background-color: #14ba88;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1422,7 +1422,7 @@ button {
 }
 .project__item {
   height: 55rem;
-  background-color: #0cbb87;
+  background-color: #008e64;
   position: relative;
   padding: 5.4rem 4rem;
 }
@@ -1482,7 +1482,7 @@ button {
   }
 }
 .join__item {
-  background-color: #0cbb87;
+  background-color: #19bc8b;
   text-align: center;
   padding: 8rem 4rem;
   border-radius: 40rem;
@@ -1512,7 +1512,7 @@ button {
 }
 @media only screen and (max-width: 48em) {
   .join__img-1 {
-    background: #0cbb87;
+    background: #19bc8b;
     height: 80rem;
     border-radius: 30rem;
     display: flex;
