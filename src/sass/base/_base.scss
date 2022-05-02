@@ -61,7 +61,7 @@ body {
 .swiper-pagination-fraction {
   bottom: -5rem;
   display: none;
-  @media only screen and (max-width: $tab-port) {
+  @media only screen and (max-width: $mbl-land) {
     display: block;
   }
 }
