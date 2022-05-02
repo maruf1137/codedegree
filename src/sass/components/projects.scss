@@ -29,27 +29,6 @@
 .project {
   position: relative;
 
-  &::after {
-    content: "drag";
-    display: block;
-    background-color: $color-white;
-    // background-color: red;
-    height: 11rem;
-    width: 11rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: #0a0b11;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    text-transform: uppercase;
-  }
   &__item {
     height: 55rem;
     background-color: #008e64;
@@ -87,5 +66,26 @@
 }
 
 .owl-theme .owl-nav {
+  display: none;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  background-color: #fff;
+  height: 11rem;
+  width: 11rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #0a0b11;
+  text-transform: uppercase;
+  z-index: 3;
   display: none;
 }

@@ -1410,26 +1410,6 @@ button {
 .project {
   position: relative;
 }
-.project::after {
-  content: "drag";
-  display: block;
-  background-color: #fff;
-  height: 11rem;
-  width: 11rem;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #0a0b11;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-transform: uppercase;
-}
 .project__item {
   height: 55rem;
   background-color: #008e64;
@@ -1467,6 +1447,27 @@ button {
 }
 
 .owl-theme .owl-nav {
+  display: none;
+}
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  background-color: #fff;
+  height: 11rem;
+  width: 11rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #0a0b11;
+  text-transform: uppercase;
+  z-index: 3;
   display: none;
 }
 
@@ -1813,6 +1814,78 @@ button {
 }
 .copyright .social {
   gap: 3rem;
+}
+
+.rtl-page .frame__details {
+  text-align: right;
+}
+.rtl-page .frame__details .heading,
+.rtl-page .frame__details .text {
+  font-family: "Nunito Sans", sans-serif;
+}
+@media only screen and (max-width: 35.9375em) {
+  .rtl-page .frame__details {
+    text-align: center;
+  }
+}
+.rtl-page .footer__col-1 {
+  margin-right: 0;
+  margin-left: 8rem;
+}
+.rtl-page .article-section .details h5,
+.rtl-page .article-section .details p {
+  text-align: right;
+}
+.rtl-page .mbl-bars {
+  right: 92%;
+}
+@media only screen and (max-width: 48em) {
+  .rtl-page .mbl-bars {
+    right: 90%;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .rtl-page .mbl-bars {
+    right: 88%;
+  }
+}
+@media only screen and (max-width: 23.75em) {
+  .rtl-page .mbl-bars {
+    right: 86%;
+  }
+}
+.rtl-page .close-sidebar {
+  right: 90%;
+}
+.rtl-page .sidebar {
+  right: 0;
+  transform: translateX(100%);
+}
+.rtl-page .show-sidebar {
+  transform: translateX(0);
+}
+.rtl-page .heading,
+.rtl-page .text,
+.rtl-page .btn,
+.rtl-page a:link,
+.rtl-page a:visited {
+  font-family: "Janna LT", sans-serif;
+}
+.rtl-page .forum-section .heading {
+  font-family: "Nunito Sans", sans-serif;
+}
+.rtl-page .article-section h5,
+.rtl-page .article-section .text,
+.rtl-page .article-section a:link,
+.rtl-page .article-section a:visited,
+.rtl-page .contact h5,
+.rtl-page .contact .text,
+.rtl-page .contact a:link,
+.rtl-page .contact a:visited {
+  font-family: "Nunito Sans", sans-serif;
+}
+.rtl-page .project h4 {
+  line-height: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

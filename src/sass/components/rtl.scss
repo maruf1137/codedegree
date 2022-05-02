@@ -1,0 +1,86 @@
+.rtl-page {
+  //   .header {
+  //     direction: ltr;
+  //   }
+  .frame__details {
+    text-align: right;
+    .heading,
+    .text {
+      font-family: $font-primary;
+    }
+
+    @media only screen and (max-width: $mbl-land) {
+      text-align: center;
+    }
+  }
+
+  .footer__col-1 {
+    margin-right: 0;
+    margin-left: 8rem;
+  }
+  .article-section {
+    .details {
+      //  text-align: right;
+      h5,
+      p {
+        text-align: right;
+      }
+    }
+  }
+
+  .mbl-bars {
+    right: 92%;
+
+    @media only screen and (max-width: $tab-port) {
+      right: 90%;
+    }
+    @media only screen and (max-width: $mbl-port) {
+      right: 88%;
+    }
+    @media only screen and (max-width: $mbl-small) {
+      right: 86%;
+    }
+  }
+
+  .close-sidebar {
+    right: 90%;
+  }
+
+  .sidebar {
+    right: 0;
+    transform: translateX(100%);
+  }
+
+  .show-sidebar {
+    transform: translateX(0);
+  }
+
+  .heading,
+  .text,
+  .btn,
+  a:link,
+  a:visited {
+    font-family: $font-tirtiary;
+  }
+
+  .forum-section {
+    .heading {
+      font-family: $font-primary;
+    }
+  }
+  .article-section,
+  .contact {
+    h5,
+    .text,
+    a:link,
+    a:visited {
+      font-family: $font-primary;
+    }
+  }
+
+  .project {
+    h4 {
+      line-height: 2.5rem;
+    }
+  }
+}
