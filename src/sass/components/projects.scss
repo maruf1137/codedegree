@@ -1,6 +1,28 @@
 .projects-section {
   padding: 8rem 0;
 
+  .swiper {
+    overflow: visible;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: -5rem;
+  }
+
+  .swiper-pagination-bullet {
+    width: 4rem;
+    background-color: #14ba88;
+    opacity: 0.5;
+    border-radius: 0.4rem;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+
   h2 {
     margin-bottom: 3rem !important;
   }
@@ -88,4 +110,5 @@
   text-transform: uppercase;
   z-index: 3;
   display: none;
+  cursor: none;
 }

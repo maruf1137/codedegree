@@ -2,22 +2,6 @@
   padding: 8rem 0;
   position: relative;
 
-  .owl-theme .owl-dots .owl-dot span {
-    width: 4rem;
-    background-color: #14ba88;
-    opacity: 0.5;
-    display: none;
-    margin-top: 5rem;
-
-    @media only screen and (max-width: $mbl-land) {
-      display: block;
-    }
-  }
-
-  .owl-theme .owl-dots .owl-dot.active span {
-    opacity: 1;
-  }
-
   .text {
     font-size: 2rem;
     color: $color-black;

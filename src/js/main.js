@@ -1,17 +1,3 @@
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 30,
-  nav: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    768: {
-      items: 2,
-    },
-  },
-});
-
 const bars = document.querySelector(".bars");
 const closeSidebar = document.querySelector(".close-sidebar");
 const sidebar = document.querySelector(".sidebar");
@@ -32,7 +18,7 @@ const cursor = document.querySelector(".cursor");
 gsap.to(cursor, { xPercent: -50, yPercent: -50 });
 
 window.addEventListener("mousemove", (e) => {
-  console.log(e.x);
+  // console.log(e.x);
   gsap.to(cursor, { x: e.x, y: e.y });
 });
 
@@ -47,3 +33,36 @@ const cursorHide = () => {
 const project = document.querySelector(".project");
 project.addEventListener("mouseover", cursorShow);
 project.addEventListener("mouseout", cursorHide);
+
+// swiper js
+
+var swiper = new Swiper(".projectSwiper", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+var swiper = new Swiper(".platformSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+var swiper = new Swiper(".articleSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+const swiperBtn = document.querySelectorAll(".swiper-pagination-bullet");
+swiperBtn.forEach((e) => {
+  e.textContent = "";
+});

@@ -48,6 +48,37 @@ body {
   }
 }
 
+.swiper {
+  overflow: visible;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -5rem;
+  display: none;
+}
+@media only screen and (max-width: 48em) {
+  .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    display: block;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 4rem;
+  background-color: #14ba88;
+  opacity: 0.5;
+  border-radius: 0.4rem;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
 h1.heading {
   font-size: 5.2rem;
   font-family: "Nunito Sans", sans-serif;
@@ -1281,21 +1312,6 @@ button {
   padding: 8rem 0;
   position: relative;
 }
-.platform-section .owl-theme .owl-dots .owl-dot span {
-  width: 4rem;
-  background-color: #14ba88;
-  opacity: 0.5;
-  display: none;
-  margin-top: 5rem;
-}
-@media only screen and (max-width: 35.9375em) {
-  .platform-section .owl-theme .owl-dots .owl-dot span {
-    display: block;
-  }
-}
-.platform-section .owl-theme .owl-dots .owl-dot.active span {
-  opacity: 1;
-}
 .platform-section .text {
   font-size: 2rem;
   color: #000;
@@ -1385,6 +1401,24 @@ button {
 .projects-section {
   padding: 8rem 0;
 }
+.projects-section .swiper {
+  overflow: visible;
+}
+.projects-section .swiper-horizontal > .swiper-pagination-bullets,
+.projects-section .swiper-pagination-bullets.swiper-pagination-horizontal,
+.projects-section .swiper-pagination-custom,
+.projects-section .swiper-pagination-fraction {
+  bottom: -5rem;
+}
+.projects-section .swiper-pagination-bullet {
+  width: 4rem;
+  background-color: #14ba88;
+  opacity: 0.5;
+  border-radius: 0.4rem;
+}
+.projects-section .swiper-pagination-bullet-active {
+  opacity: 1;
+}
 .projects-section h2 {
   margin-bottom: 3rem !important;
 }
@@ -1469,6 +1503,7 @@ button {
   text-transform: uppercase;
   z-index: 3;
   display: none;
+  cursor: none;
 }
 
 .join-section {

@@ -16,14 +16,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <!-- <link
+    <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
-      integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N"
-      crossorigin="anonymous"
-    /> -->
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="fonts/stylesheet.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -230,44 +226,54 @@
                 </p>
               </div>
 
-              <!-- vbvbn -->
-              <div class="owl-carousel owl-theme">
-                <div
-                  class="platform__item col-12 col-sm-6 col-lg-4 mbl-land-show"
-                >
-                  <figure class="platform__img mb-5">
-                    <img src="img/platform-img-1.png" alt="" />
-                  </figure>
-                  <h3 class="heading mb-2">الحفظ</h3>
-                  <p class="text">
-                    تجبر عقلك على حفظ لغات البرمجة بشكل أسرع وأفضل
-                  </p>
+              <!-- swiper -->
+              <div class="swiper platformSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div
+                      class="platform__item col-12 col-sm-6 col-lg-4 mbl-land-show"
+                    >
+                      <figure class="platform__img mb-5">
+                        <img src="img/platform-img-1.png" alt="" />
+                      </figure>
+                      <h3 class="heading mb-2">الحفظ</h3>
+                      <p class="text">
+                        تجبر عقلك على حفظ لغات البرمجة بشكل أسرع وأفضل
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="platform__item col-12 col-sm-6 col-lg-4 mbl-land-show"
+                    >
+                      <figure class="platform__img mb-5">
+                        <img src="img/platform-img-2.png" alt="" />
+                      </figure>
+                      <h3 class="heading mb-2">الأخطاء</h3>
+                      <p class="text">
+                        تتعلم من أخطائك على الفور.لأنك ترى بعينك في ذات الوقت
+                        ماينتج عن كتابة اي كود بشكل خاطئ
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="platform__item col-12 col-sm-6 col-lg-4 mbl-land-show"
+                    >
+                      <figure class="platform__img mb-5">
+                        <img src="img/platform-img-3.png" alt="" />
+                      </figure>
+                      <h3 class="heading mb-2">التشجيع</h3>
+                      <p class="text">
+                        يمكنك تصحيح أخطائك بسرعة، والاستمرار في المحاولة حتى
+                        تتقن ذلك بسهولة.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div
-                  class="platform__item col-12 col-sm-6 col-lg-4 mbl-land-show"
-                >
-                  <figure class="platform__img mb-5">
-                    <img src="img/platform-img-2.png" alt="" />
-                  </figure>
-                  <h3 class="heading mb-2">الأخطاء</h3>
-                  <p class="text">
-                    تتعلم من أخطائك على الفور.لأنك ترى بعينك في ذات الوقت ماينتج
-                    عن كتابة اي كود بشكل خاطئ
-                  </p>
-                </div>
-                <div
-                  class="platform__item col-12 col-sm-6 col-lg-4 mbl-land-show"
-                >
-                  <figure class="platform__img mb-5">
-                    <img src="img/platform-img-3.png" alt="" />
-                  </figure>
-                  <h3 class="heading mb-2">التشجيع</h3>
-                  <p class="text">
-                    يمكنك تصحيح أخطائك بسرعة، والاستمرار في المحاولة حتى تتقن
-                    ذلك بسهولة.
-                  </p>
-                </div>
+                <div class="swiper-pagination"></div>
               </div>
+              <!-- swiper -->
             </div>
           </div>
         </div>
@@ -309,23 +315,47 @@
 
         <div class="custom-container">
           <div class="project">
-            <div class="owl-carousel owl-theme">
-              <div class="item project__item">
-                <h4 class="heading">اسم المشروع هنا في سطرين أو ثلاثة</h4>
-                <figure></figure>
+            <!-- swiper js -->
+            <div class="swiper projectSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="item project__item">
+                    <h4 class="heading">اسم المشروع هنا في سطرين أو ثلاثة</h4>
+                    <figure></figure>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item project__item">
+                    <h4 class="heading">اسم المشروع هنا في سطرين أو ثلاثة</h4>
+                    <figure></figure>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item project__item">
+                    <h4 class="heading">اسم المشروع هنا في سطرين أو ثلاثة</h4>
+                    <figure></figure>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item project__item">
+                    <h4 class="heading">اسم المشروع هنا في سطرين أو ثلاثة</h4>
+                    <figure></figure>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item project__item">
+                    <h4 class="heading">اسم المشروع هنا في سطرين أو ثلاثة</h4>
+                    <figure></figure>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="item project__item">
+                    <h4 class="heading">اسم المشروع هنا في سطرين أو ثلاثة</h4>
+                    <figure></figure>
+                  </div>
+                </div>
               </div>
-              <div class="item project__item">
-                <h4 class="heading">اسم المشروع هنا في سطرين أو ثلاثة</h4>
-                <figure></figure>
-              </div>
-              <div class="item project__item">
-                <h4 class="heading">اسم المشروع هنا في سطرين أو ثلاثة</h4>
-                <figure></figure>
-              </div>
-              <div class="item project__item">
-                <h4 class="heading">اسم المشروع هنا في سطرين أو ثلاثة</h4>
-                <figure></figure>
-              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -466,7 +496,71 @@
                 </div>
               </div>
 
-              <div class="owl-carousel owl-theme">
+              <!-- swiper -->
+              <div class="swiper articleSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div
+                      class="col col-12 col-sm-6 col-lg-4 article__item mbl-land-show"
+                    >
+                      <figure class="article__img">
+                        <img src="img/article-img-1.png" alt="" />
+                      </figure>
+                      <div class="details">
+                        <h5 class="heading mb-1">
+                          عنوان المقال في سطر سطرين أو أكثر
+                        </h5>
+                        <p class="text mb-2">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing
+                          elitr, sed diam nonumy eirmod.
+                        </p>
+                        <a href="#" class="read">اقرا أكثر</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="col col-12 col-sm-6 col-lg-4 article__item mbl-land-show"
+                    >
+                      <figure class="article__img">
+                        <img src="img/article-img-2.png" alt="" />
+                      </figure>
+                      <div class="details">
+                        <h5 class="heading mb-1">
+                          عنوان المقال في سطر سطرين أو أكثر
+                        </h5>
+                        <p class="text mb-2">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing
+                          elitr, sed diam nonumy eirmod.
+                        </p>
+                        <a href="#" class="read">اقرا أكثر</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div
+                      class="col col-12 col-sm-6 col-lg-4 article__item mbl-land-show"
+                    >
+                      <figure class="article__img">
+                        <img src="img/article-img-3.png" alt="" />
+                      </figure>
+                      <div class="details">
+                        <h5 class="heading mb-1">
+                          عنوان المقال في سطر سطرين أو أكثر
+                        </h5>
+                        <p class="text mb-2">
+                          Lorem ipsum dolor sit amet, consetetur sadipscing
+                          elitr, sed diam nonumy eirmod.
+                        </p>
+                        <a href="#" class="read">اقرا أكثر</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <!-- swiper -->
+              <!-- <div class="owl-carousel owl-theme">
                 <div
                   class="col col-12 col-sm-6 col-lg-4 article__item mbl-land-show"
                 >
@@ -518,7 +612,7 @@
                     <a href="#" class="read">اقرا أكثر</a>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
 
             <div class="custom-container center mt-6">
@@ -726,6 +820,28 @@
           </div>
         </div>
       </footer>
+
+      <!-- <section class="prectice" dir="ltr"> -->
+      <!-- <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+             <div class="swiper-slide">Slide 1</div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div> -->
+
+      <!-- 
+
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+         -->
+      <!-- </section> -->
     </main>
 
     <div class="cursor">drag</div>
@@ -740,12 +856,8 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="js/main.js"></script>
   </body>
