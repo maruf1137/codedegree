@@ -7,19 +7,14 @@
     color: $color-white;
   }
 
-  .owl-theme .owl-dots .owl-dot span {
+  .swiper-pagination-bullet {
     width: 4rem;
     background-color: #fff;
     opacity: 0.5;
-    display: none;
-    margin-top: 5rem;
-
-    @media only screen and (max-width: $mbl-land) {
-      display: block;
-    }
+    border-radius: 0.4rem;
   }
 
-  .owl-theme .owl-dots .owl-dot.active span {
+  .swiper-pagination-bullet-active {
     opacity: 1;
   }
 }
